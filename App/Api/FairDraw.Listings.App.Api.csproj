@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Automapper" Version="15.0.1" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Application/FairDraw.Listings.App.Application.csproj" />
+    <ProjectReference Include="../Domain/FairDraw.Listings.App.Domain.csproj" />
+    <ProjectReference Include="../Infrastructure/FairDraw.Listings.App.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
