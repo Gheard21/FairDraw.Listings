@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "restore and build tests",
+			"type": "shell",
+			"command": "dotnet restore && dotnet build FairDraw.Listings.sln -c Debug",
+			"isBackground": false,
+			"problemMatcher": [
+				"$mscompile"
+			],
+			"group": "build"
+		}
+	]
+}
