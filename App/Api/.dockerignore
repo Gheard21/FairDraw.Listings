@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+.github/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# VS Code
+.vscode/
+.editorconfig
+
+# Build output
+**/bin/
+**/obj/
+**/out/
+
+# User secrets
+**/appsettings.*.json
+**/secrets.json
+
+# Misc
+README.md
+LICENSE
+*.md

@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+.github/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# VS Code
+.vscode/
+.editorconfig
+
+# Environment files
+.env
+
+# Build output
+**/bin/
+**/obj/
+**/out/
+
+# User secrets
+**/appsettings.*.json
+**/secrets.json
+
+# Misc
+README.md
+LICENSE
+*.md
+
+# Tests
+Tests/

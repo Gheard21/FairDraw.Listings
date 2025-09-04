@@ -65,12 +65,38 @@ dotnet ef database update
 
 ### Running the Application
 
+#### Option 1: Local Development with dotnet CLI
+
 ```bash
 cd App/Api
 dotnet run
 ```
 
 The API will be available at `https://localhost:5001` and `http://localhost:5000` (or as configured in launchSettings.json).
+
+#### Option 2: Using Docker
+
+To run both the PostgreSQL database and the API in Docker containers:
+
+```bash
+# Build and start all services
+docker compose up -d
+
+# Check logs
+docker compose logs -f api
+```
+
+The API will be available at `http://localhost:8080`.
+
+You can also build and run just the API container:
+
+```bash
+# Build the API image
+docker build -t fairdraw-listings-api .
+
+# Run the container
+docker run -p 8080:8080 -e ConnectionStrings__DefaultConnection="Server=host.docker.internal;Port=5432;Database=FairDrawListings;User Id=postgres;Password=postgres;" fairdraw-listings-api
+```
 
 ## Project Structure
 
