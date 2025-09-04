@@ -23,13 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairDraw.Listings.App.Appli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairDraw.Listings.App.Domain", "App\Domain\FairDraw.Listings.App.Domain.csproj", "{2DAD5853-88E3-4710-B83E-C13E7C59740A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{BF04BF83-26D9-7E42-FA55-7B66B6278E1D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C662CC79-4200-4BCA-8801-BF9C4A4D7F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -64,6 +66,9 @@ Global
 		{2DAD5853-88E3-4710-B83E-C13E7C59740A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DAD5853-88E3-4710-B83E-C13E7C59740A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DAD5853-88E3-4710-B83E-C13E7C59740A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C662CC79-4200-4BCA-8801-BF9C4A4D7F7B} = {1A70DBAF-9DA1-482D-9399-5BB7BCF12F5B}
